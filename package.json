@@ -1,0 +1,25 @@
+{
+  "name": "testautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:dev": "cross-env ENV=development npx bddgen && npx playwright test",
+    "test:stage": "cross-env ENV=staging npx bddgen && npx playwright test",
+    "test:prod": "cross-env ENV=production npx bddgen && npx playwright test",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.4",
+    "cross-env": "^10.1.0",
+    "dotenv": "^18.0.5",
+    "playwright-bdd": "^9.2.1",
+    "typescript": "^7.0.2",
+    "zod": "^4.6.5"
+  }
+}
